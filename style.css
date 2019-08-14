@@ -4,7 +4,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     top: 15%;
-    background: linear-gradient(to bottom, red , yellow); /* Standard syntax */
+    background: linear-gradient(to bottom, red , yellow);
 }
 
 h1 {
