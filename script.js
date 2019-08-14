@@ -8,13 +8,9 @@ var direction = document.getElementById("direction");
 
 function setGradient() {
 	body.style.background =
-	"linear-gradient(to " + direction.value + " ,"
-	+ color1.value
-	+ ", "
-	+ color2.value
-	+ ")";
+	`linear-gradient(to ${direction.value}, ${color1.value}, ${color2.value})`;
 
-	css.value = body.style.background + ";";
+	css.value = `${body.style.background};`;
 }
 
 function copy() {
