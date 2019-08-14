@@ -35,3 +35,7 @@ h3 {
     display: block;
     margin: auto;
 }
+
+#direction {
+    margin: 1rem auto;
+}
