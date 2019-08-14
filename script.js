@@ -4,16 +4,13 @@ var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 var cssOutput = css.value;
 var button = document.getElementById("copyButton");
+var direction = document.getElementById("direction");
 
 function setGradient() {
 	body.style.background =
-	"linear-gradient(to bottom, "
-	+ color1.value
-	+ ", "
-	+ color2.value
-	+ ")";
+	`linear-gradient(to ${direction.value}, ${color1.value}, ${color2.value})`;
 
-	css.value = body.style.background + ";";
+	css.value = `${body.style.background};`;
 }
 
 function copy() {
@@ -22,7 +19,6 @@ function copy() {
 }
 
 button.addEventListener("click", copy);
-
 color1.addEventListener("input", setGradient);
-
 color2.addEventListener("input", setGradient);
+direction.addEventListener("input", setGradient);
