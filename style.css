@@ -26,3 +26,7 @@ h3 {
     letter-spacing: 0.01em;
 
 }
+
+#cssOutput {
+    width: 400px;
+}

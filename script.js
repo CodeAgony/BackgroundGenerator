@@ -1,7 +1,9 @@
-var css = document.querySelector("h3");
+var css = document.getElementById("cssOutput");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
+var cssOutput = css.value;
+var button = document.getElementById("copyButton");
 
 function setGradient() {
 	body.style.background =
@@ -11,8 +13,15 @@ function setGradient() {
 	+ color2.value
 	+ ")";
 
-	css.textContent = body.style.background + ";";
+	css.value = body.style.background + ";";
 }
+
+function copy() {
+	css.select();
+	document.execCommand("copy");
+}
+
+button.addEventListener("click", copy);
 
 color1.addEventListener("input", setGradient);
 
