@@ -30,3 +30,8 @@ h3 {
 #cssOutput {
     width: 400px;
 }
+
+.color1, .color2 {
+    display: block;
+    margin: auto;
+}
